@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:ital,wght@1,400;1,700&display=swap');
+
+
+:root{
+    --white: hsl(0, 0%, 100%);
+
+    --cyan: hsl(176, 68%, 64%);
+    --blue: hsl(198, 60%, 50%);
+    --light-red: hsl(0, 100%, 63%);
+
+    --intro: hsl(217, 28%, 15%);
+    --main-background: hsl(218, 28%, 13%);
+    --tfooter-background: hsl(216, 53%, 9%);
+    --testimonials-background: hsl(219, 30%, 18%);
+
+    --fs-14:14px
+
+    --fw-400:400;
+    --fw-700:700;
+
+}
+
+h1,h2 {
+    font-style: none;
+    font-family: "Raleway", serif;
+}
+p, li{
+    font-family: "Open Sans", serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{width: 100%;
+    height: 100vh;
+    background-color:var(--main-background);
+    color: white;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+header .logo {
+    margin-right: 1rem;
+}
+ul li {
+    padding-right: 1rem;
+}
+
+ul li:hover{
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+.hero-center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3rem 0 ;
+}
+
+.hero-img img {
+    width: 80%;
+}
+
+.hero-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+    
+}
+
+.hero-content h1{
+    
+    width: 30%;
+    margin-bottom: 1rem;
+}
+.hero-content p{
+    width: 32%;
+    margin-bottom: 1rem;
+}
+
+button{
+  width: 200px;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(to right, #65e2d9, #339ecc);
+    padding: 1rem;
+    color: var(--white);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--cyan);
+}
+
+.features{
+    width: 100%;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(2, 30%);
+    grid-template-rows:repeat(2, 1fr) ;
+    row-gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.productive {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.productive .img {
+    width: 60%;
+    margin-left: 4rem;
+}
+.productive .img  img{
+    width: 100%;
+}
+
+.productive-text{
+    margin: 0 3rem;
+}
+
+.productive-text h1{
+    margin-bottom: 2rem;
+}
+.productive-text p:first-of-type,
+.productive-text p:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+.productive-text p:nth-of-type(3){
+    color:var(--cyan)
+}
+.productive-text p:nth-of-type(3):hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color:var(--cyan)
+}
+
+.testimonials {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+
+    
+}
+.card {
+    width: 400px;
+    background-color: var(--testimonials-background);
+    margin-right: 2rem;
+    border-radius: 5px;
+    padding: 2rem 1rem 0 1rem;
+}
+.card .card-testi { 
+    margin-bottom: 1rem;
+}
+.card-footer{
+    display: flex;
+    padding-bottom: 1rem;
+}
+.card-footer .img  {
+    margin-right: 1rem;
+}
+.card-footer .img img {
+    width: 40px;
+    border-radius: 50%;
+}
+.member {
+    width: 80%;
+   position: relative;
+    background-color: #1c2431;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem  2rem 2rem;
+    margin-bottom: 3rem;
+    left:10%;
+    top: 120px;
+  
+}
+.member h1{ margin-bottom: 1rem;
+
+}
+form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+}
+input{
+    border: none;
+    border-radius: 40px;
+    width: 60%;
+    margin-right: 1rem;
+}
+input[type=text]{
+    padding-left: 1rem;
+}
+footer{
+    padding: 12rem 2rem 2rem 2rem;
+    background-color: var(--tfooter-background);
+}
+.footer-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+.lorem{
+    display: flex;
+    width: 30%;
+}
+.lorem img{
+    margin-right: 1rem;
+}
+.contact div {
+    margin-bottom: 0.5rem;
+}
+.contact div img {
+    margin-right: 1rem;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.list p {
+    margin-bottom: 0.5rem;
+}
+
+.list p:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+.icons ion-icon {padding: 0.3rem;}
+
+.icons ion-icon:hover {
+    border: 2px white solid;
+    border-radius: 50%;
+}
+
+@media (max-width:800px){
+   .footer-bar{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    }
+
+    .lorem{
+    margin: 2rem 0;
+    width: 90%;
+    }
+
+    .contact{
+    margin-bottom: 2rem;
+    }
+    .list-one{
+    margin-bottom: 2rem;
+    }
+
+    
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    input{
+        border: none;
+        border-radius: 40px;
+        height: 40px;
+        width:80%;
+        margin-bottom: 1rem;
+    }
+
+    button:last-of-type{
+        width: 80%;
+    }
+    .testimonials{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+    }
+
+    .card{
+
+        width: 80%;
+
+    }
+    .card:first-of-type,.card:nth-of-type(2){
+        margin-bottom: 2rem;
+    }
+    
+    .productive {
+        flex-direction: column;
+    }
+    .productive .img {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+    .productive-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-start;
+    }
+
+    .features{ 
+        grid-template-columns: repeat(1, 80%);
+        grid-template-rows:repeat(4, 300px);
+        gap:1rem;
+    }
+
+    .hero-content h1{
+        width: 60%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .hero-content p{
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+    
+    button:first-of-type{
+      width: 40%;
+    }
+
+}
+@media (max-width:470px){
+    ul {
+        flex-direction: column;
+    }
+    ul li {margin-bottom: 0.2rem;}
+}
