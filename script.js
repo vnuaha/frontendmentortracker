@@ -4,7 +4,8 @@ const projects = [
   "sunnyside-agency-landing-page-main",
   "testimonials-grid-section-main",
   "nft-preview-card-component-main",
-  "fylo-landing-page"
+  "fylo-landing-page",
+  "huddle-landing-page-with-alternating-feature"
 ];
 
 const list = document.getElementById("list-projects");
