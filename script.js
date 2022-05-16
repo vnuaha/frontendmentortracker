@@ -5,7 +5,8 @@ const projects = [
   "testimonials-grid-section-main",
   "nft-preview-card-component-main",
   "fylo-landing-page",
-  "huddle-landing-page-with-alternating-feature"
+  "huddle-landing-page-with-alternating-feature",
+  "clipboard-landing-page"
 ];
 
 const list = document.getElementById("list-projects");
