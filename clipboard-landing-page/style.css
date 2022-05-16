@@ -148,6 +148,10 @@ footer {
   justify-content: space-around;
 }
 
+.logo img {
+  width: 50px;
+}
+
 .menu {
   display: flex;
   text-align: left;
